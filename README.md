@@ -1,4 +1,4 @@
-sweSCB v0.3.3
+sweSCB v0.3.4
 =======
 
 ## Introduction
@@ -8,10 +8,10 @@ The package offers methods to fetch information about the data hierarchy stored 
 
 The source code for this project is entirely free and is licensed under the [AGPLv3 license](http://www.gnu.org/licenses/agpl-3.0.html) (also included with this package). This means that you are free to use, distribute and modify the code as you see fit. However, any code you add to this code _must_ also be released under the same license or any compatible and equally free license, as-is without any modifications. Freedom is a precious thing and can only be safeguarded by openness, sharing, and a [copyleft](http://en.wikipedia.org/wiki/Copyleft) attitude towards intellectual property.
 
-## New in version 0.3.3
-Version 0.3.3 was released on 1 April, 2014.  
+## New in version 0.3.4
+Version 0.3.4 was released on 15 April, 2014.  
 
-- Some bug fixes due to SCB download limit
+- Small error corrections
 
 ## A brief note on using the SCB API
 The SCB API is a RESTful API. The data consists of a metadata part and a data part. The metadata part is structured in a hierarchical node tree, where each node contains information about any (sub-)nodes that are below it in the tree structure or, if the nodes is at the bottom of the tree structure, the data referenced by the node as well as what dimensions are available for the data at that subnode.
