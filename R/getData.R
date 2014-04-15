@@ -33,9 +33,6 @@
 #'    Tid = "*"
 #' ))
 #' 
-#' # Examine data
-#' View(test)
-#'
 
 scbGetData <- function(url, dims, clean = FALSE) {
 
