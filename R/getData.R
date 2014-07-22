@@ -69,8 +69,8 @@ scbGetData <- function(url, dims, clean = FALSE) {
       stop(str_join("No internet connection to ",url),
            call.=FALSE)
    }
-   if(response$headers$statusmessage != "OK") {
-     stop(str_join(response$headers$status, response$headers$statusmessage, content(response,as='text'), sep=" "),
+   if(httr::http_status(response)$category != "success") {
+     stop(httr::http_status(response)$message,
           call.=FALSE)
    }
    
