@@ -17,7 +17,7 @@ Version 0.3.5 was released on 22th of July, 2014.
 The SCB API is a RESTful API. The data consists of a metadata part and a data part. The metadata part is structured in a hierarchical node tree, where each node contains information about any (sub-)nodes that are below it in the tree structure or, if the nodes is at the bottom of the tree structure, the data referenced by the node as well as what dimensions are available for the data at that subnode.
 
 ## Installation
-The current package on CRAN is v.0.3.4. This version can be downloaded as follows:
+The current package on CRAN is v.0.3.5. This version can be downloaded as follows:
 ```r
 install.packages("sweSCB")
 library(sweSCB)
