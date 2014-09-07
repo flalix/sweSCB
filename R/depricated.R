@@ -8,8 +8,7 @@
 #' @param ... further argument to send to \code{get_pxweb_metadata()}
 #' @export
 
-scbGetLevels <- function(baseURL, descriptions = FALSE, quiet = FALSE, ...)
-  ) {
+scbGetLevels <- function(baseURL, descriptions = FALSE, quiet = FALSE, ...){
     warning("Function is depricated, please use get_pxweb_levels() instead.")
     get_pxweb_levels(baseURL = baseURL, descriptions = descriptions, quiet = quiet,...)
   }
