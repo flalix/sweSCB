@@ -1,21 +1,3 @@
-#' @title Find and download data from SCB
-#'
-#' @description Function is depricated, please use \link{find_scb_data} instead.
-#' 
-#' @param history keep the history when the function is running.
-#' @param ... further parameters. These are currently ignored.
-#' 
-#' @export
-#' 
-
-findData <- function(history = FALSE, ...){
-  warning("Function findData() is depricated. Use find_scb_data() instead.", call. = FALSE)
-
-  find_scb_data(history = history, ...)
-  
-}
-
-
 #' @title Find and download data from Statistics Sweden
 #'
 #' @description Function to simply find and download data from SCB to the current R session. 
