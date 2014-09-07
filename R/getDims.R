@@ -1,47 +1,15 @@
-#' Get data dimensions form a bottom node in SCB API
+#' Get data dimensions form a bottom node in SCB API (Function is depricated)
 #' 
-#' Deparse and reorder data form the metadata object for pretty output
+#' Function is depricated. Please use \code{\link{get_pxweb_dims}} instead.
 #' 
 #' @param node Bottom node to deparse into object
 #' @param verbose Verbose output mode.
-#' @seealso \link{scbGetMetadata}
+#' @seealso \code{\link{get_pxweb_metadata}}
 #' @export
-#' @examples
-#' 
-#' 
-#' ## CONTINUED FROM EXAMPLES IN scbGetMetadata()
-#' # Get metadata for a named variable
-#' url <- paste(c(baseURL(),"AM","AM0102","AM0102A","KLStabell14LpMan"), collapse="/")
-#' metadata <- scbGetMetadata(url)
-#' 
-#' # Get dimensions (names of dimensions are printed in the terminal)
-#' dims <- scbGetDims(metadata)
-#' 
-#' # Get data
-#' test <- scbGetData(metadata$URL, dims=list(
-#'    Myndighet = "C02",
-#'    Kon = "*",
-#'    Heltiddeltid = "*",
-#'    ContentsCode = "*",
-#'    Tid = "*"
-#' ))
-#' 
+
 
 scbGetDims <- function(node, verbose=TRUE) {
-	
-	## Deparse metadata object into elements
-	# Title
-	title <- node$title$title
-	
-	vars <- node$variables$variables
-	ndim <- length(vars)
-	
-	names <- sapply(vars, function(var,i) { var$code }, 1:ndim)
-	
-	if(verbose) {
-		cat("Title: \n", title, "\n")
-		cat("Names: \n", names, "\n")
-	}
-	
-	return(vars)
+  warning("scbGetDims() is depricated. Please use get_pxweb_dims() instead. \nAPI parameters for Statistics Sweden can found with scb_api_parameters().")
+  get_pxweb_dims(node=node, verbose=verbose)
 }
+
