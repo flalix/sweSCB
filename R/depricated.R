@@ -47,7 +47,7 @@ scbGetDims <- function(node, verbose=TRUE) {
 
 #' Get data from a bottom node in SCB API (Function is depricated)
 #' 
-#' Function is depricated. Please use \link{\code{get_pxweb_data}} instead. To get api parameters, use \code{\link{scb_api_parameters}}.
+#' Function is depricated. Please use \code{\link{get_pxweb_data}} instead. To get api parameters, use \code{\link{scb_api_parameters}}.
 #'  
 #' @param url URL to get data from (it is usually sufficient to submit the base URL, supplied via the \code{\link{base_url}} function, and the name of the variable).
 #' @param dims A list of dimensional parameters to filter data by. Note that values \emph{must} be submitted for all dimensions of the data. If you don't want to filter data, submit an asterisk in quotation marks ("*") instead of values for that dimension.

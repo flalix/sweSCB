@@ -5,5 +5,5 @@
 #' 
 #' @name sweSCB
 #' @docType package
-#' @import data.table httr RJSONIO stringr
+#' @import pxweb
 NULL

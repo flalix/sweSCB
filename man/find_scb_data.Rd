@@ -6,13 +6,13 @@
 find_scb_data(lang = "sv", version = "v1", history = FALSE, ...)
 }
 \arguments{
+\item{lang}{API language. Default is \code{"sv"} (swedish). Use \code{\link{scb_api_parameters}} to see possible languages.}
+
 \item{version}{API version. Default is \code{"v1"} (version 1). Use \code{\link{scb_api_parameters}} to see possible versions.}
 
 \item{history}{keep the history when the function is running.}
 
 \item{...}{further parameters. These are currently ignored.}
-
-\item{language}{API language. Default is \code{"sv"} (swedish). Use \code{\link{scb_api_parameters}} to see possible languages.}
 }
 \description{
 Function to simply find and download data from SCB to the current R session.

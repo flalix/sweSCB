@@ -13,7 +13,7 @@ scbGetData(url, dims, clean = FALSE)
 \item{clean}{Clean and melt the data to R format.}
 }
 \description{
-Function is depricated. Please use \link{\code{get_pxweb_data}} instead. To get api parameters, use \code{\link{scb_api_parameters}}.
+Function is depricated. Please use \code{\link{get_pxweb_data}} instead. To get api parameters, use \code{\link{scb_api_parameters}}.
 }
 \seealso{
 \code{\link{get_pxweb_metadata}}, \code{\link{get_pxweb_dims}}, \code{\link{get_pxweb_levels}}

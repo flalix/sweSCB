@@ -3,7 +3,7 @@
 #' @description Function to simply find and download data from SCB to the current R session. 
 #' 
 #' @param history keep the history when the function is running.
-#' @param language API language. Default is \code{"sv"} (swedish). Use \code{\link{scb_api_parameters}} to see possible languages.
+#' @param lang API language. Default is \code{"sv"} (swedish). Use \code{\link{scb_api_parameters}} to see possible languages.
 #' @param version API version. Default is \code{"v1"} (version 1). Use \code{\link{scb_api_parameters}} to see possible versions.
 #' @param ... further parameters. These are currently ignored.
 #' 
