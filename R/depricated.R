@@ -25,8 +25,8 @@ scbGetLevels <- function(baseURL, descriptions = FALSE, quiet = FALSE, ...){
 #' @export
 
 scbGetMetadata <- function(path = NULL, node = NULL, topnodes = NULL, quiet = TRUE, ...) {
-  warning("Function is depricated, please use get_pxweb_metadata() instead.")
-  get_pxweb_metadata(path = path, node = node, topnodes = topnodes, quiet = quiet, baseURL = baseURL, ...)
+  warning("Function scbGetMetadata() is depricated, please use get_pxweb_metadata() instead.")
+  get_pxweb_metadata(path = path, node = node, topnodes = topnodes, quiet = quiet, baseURL = base_url("api.scb.se", "v1", "sv"), ...)
 }
 
 
