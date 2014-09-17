@@ -1,5 +1,5 @@
-sweSCB v0.3.5
-=======
+sweSCB v0.4.0
+==============
 
 ## Introduction
 sweSCB is an R package to interface with the API of Statistics Sweden, a.k.a. SCB. The package is a part of the international R open government data and computation project [rOpenGov](http://ropengov.github.io/).
@@ -34,7 +34,7 @@ sudo apt-get install libcurl4-openssl-dev
 Use the `devtools` package for easy installation of the latest version from GitHub:
 ```r
 install.packages("devtools")
-devtools::install_github("sweSCB","LCHansson")
+devtools::install_github("sweSCB","rOpenGov")
 library(sweSCB)
 ```
 
