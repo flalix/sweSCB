@@ -1,5 +1,5 @@
-sweSCB v0.3.5
-=======
+sweSCB v0.4.0
+==============
 
 ## Introduction
 sweSCB is an R package to interface with the API of Statistics Sweden, a.k.a. SCB. The package is a part of the international R open government data and computation project [rOpenGov](http://ropengov.github.io/).
@@ -16,11 +16,25 @@ Version 0.4.0 was released on 7th of September, 2014.
 ## A brief note on using the SCB API
 The SCB API is a RESTful API. The data consists of a metadata part and a data part. The metadata part is structured in a hierarchical node tree, where each node contains information about any (sub-)nodes that are below it in the tree structure or, if the nodes is at the bottom of the tree structure, the data referenced by the node as well as what dimensions are available for the data at that subnode.
 
-## Installation
+## Prerequisites for Fedora 20
+## Run following Terminal commands before installing sweSCB v0.4.0:
+```bash
+sudo yum update
+sudo yum install curl curl-devel
+```
+
+## Prerequisites for Ubuntu 14.04 LTS/Linux Mint
+## Run following Terminal commands before installing sweSCB v0.4.0:
+```bash
+sudo apt-get update
+sudo apt-get install libcurl4-openssl-dev
+```
+
+## Installation instructions for sweSCB v0.4.0
 Use the `devtools` package for easy installation of the latest version from GitHub:
 ```r
 install.packages("devtools")
-devtools::install_github("sweSCB","LCHansson")
+devtools::install_github("sweSCB","rOpenGov")
 library(sweSCB)
 ```
 
