@@ -16,15 +16,16 @@ Version 0.4.0 was released on 7th of September, 2014.
 ## A brief note on using the SCB API
 The SCB API is a RESTful API. The data consists of a metadata part and a data part. The metadata part is structured in a hierarchical node tree, where each node contains information about any (sub-)nodes that are below it in the tree structure or, if the nodes is at the bottom of the tree structure, the data referenced by the node as well as what dimensions are available for the data at that subnode.
 
-## Prerequisites for Fedora 20
-## Run following Terminal commands before installing sweSCB v0.4.0:
+## Prerequisites
+### Prerequisites for Fedora 20
+Run following Terminal commands before installing sweSCB v0.4.0:
 ```bash
 sudo yum update
 sudo yum install curl curl-devel
 ```
 
-## Prerequisites for Ubuntu 14.04 LTS/Linux Mint
-## Run following Terminal commands before installing sweSCB v0.4.0:
+### Prerequisites for Ubuntu 14.04 LTS/Linux Mint
+Run following Terminal commands before installing sweSCB v0.4.0:
 ```bash
 sudo apt-get update
 sudo apt-get install libcurl4-openssl-dev
